@@ -1,0 +1,11 @@
+
+
+
+cd  C:\Users\AKALYA\Desktop\PROJECT\crowd_detection
+
+conda activate crowddetect
+
+pip install -r requirements.txt
+
+
+python app.py

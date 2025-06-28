@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOLO & Depth Estimation</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Upload an Image for Detection & Depth Estimation</h2>
+    
+    <!-- Alert Box -->
+    <div id="alertBox" class="alert"></div>
+    
+    <!-- File Input -->
+    <label for="imageInput" id="fileLabel">Choose File</label>
+    <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg">
+    
+    <!-- Process Button -->
+    <button id="uploadButton" onclick="uploadImage()">Process Image</button>
+    <p id="status"></p>
+    
+    <!-- Loader -->
+    <div id="loader" class="loader" style="display: none;"></div>
+    
+    <!-- Crowd Count and Messages -->
+    <div id="crowdInfo">
+      <h3>Total Crowd: <span id="crowdCount">0</span></h3>
+      <p id="overcrowdedMessage" style="color: red; display: none;">Overcrowded! Please take action.</p>
+      <p id="highDensityMessage" style="color: red; display: none;">Very high-density area detected! Notify security team.</p>
+    </div>
+    
+    <!-- Images Row -->
+    <div class="row double">
+      <div class="image-box">
+        <h3>Uploaded Image</h3>
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display:none;">
+      </div>
+      <div class="image-box">
+        <h3>Processed Image</h3>
+        <img id="processedImage" src="#" alt="Processed Image" style="display:none;">
+      </div>
+      <div class="image-box">
+        <h3>Depth Map</h3>
+        <img id="depthMap" src="#" alt="Depth Map" style="display:none;">
+      </div>
+      <div class="image-box">
+        <h3>Density Map</h3>
+        <img id="densityImage" src="#" alt="Density Map" style="display:none;">
+      </div>
+    </div>
+  </div>
+  
+  <script src="/static/scripts.js"></script>
+</body>
+</html>

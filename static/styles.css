@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #1a1a2e;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 80%; /* Adjusted for better spacing */
+  margin: auto;
+  padding: 30px;
+  background: #16213e;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+  color: #e94560;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Alert Box */
+#alertBox {
+  display: none;
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#alertBox.error {
+  background-color: #ffcccc;
+  color: #d8000c;
+}
+#alertBox.success {
+  background-color: #ccffcc;
+  color: #4f8a10;
+}
+
+/* File Input */
+#fileLabel {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#imageInput {
+  display: none;
+}
+
+/* Upload Button */
+button {
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+button:hover {
+  background: #0f3460;
+  transform: scale(1.05);
+}
+
+/* Row Layouts */
+.row {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between images */
+}
+.row.double {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px; /* Adds space between images */
+}
+
+/* Image Box */
+.image-box {
+  background: #0f3460;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.1);
+  flex: 1; /* Ensures equal width for both images */
+}
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 100%; /* Ensures images fit within their containers */
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Loader */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #e94560;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 10px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

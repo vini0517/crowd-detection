@@ -1,0 +1,14 @@
+ultralytics== 8.3.35
+Flask 
+Flask-SocketIO 
+opencv-python
+transformers== 4.46.3
+pillow
+numpy
+matplotlib
+torch 
+torchvision
+eventlet
+scikit-learn
+pandas 
+openpyxl
