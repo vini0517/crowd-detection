@@ -8,12 +8,13 @@ Web Page
 
 
 🔴 Overcrowded Detection Example
-This shows an image where multiple individuals were detected by the YOLOv8 model, indicating **high crowd density**.
+This shows an image where multiple individuals were detected by the YOLOv8 model, indicating **High crowd density**.
 
 ![Overcrowded Output](https://github.com/user-attachments/assets/380b229f-0d09-48c3-b3d9-a82f00d2ae3a)
 
+
 ✅ Normal / Low Density Detection Example
-This shows an image where **no overcrowding** was detected.
+This shows an image where **No overcrowding** was detected.
 
 ![Normal Crowd Output](https://github.com/user-attachments/assets/674bad47-e064-4f18-ac1d-7c10f4190458)
 
@@ -24,7 +25,11 @@ This shows an image where **no overcrowding** was detected.
 
 2️⃣ Navigate to the project directory:
 
-    cd C:\Users\AKALYA\Desktop\PROJECT\crowd_detection
+    cd path\to\your\project\folder
+
+Example (Windows):
+
+    cd C:\Users\YourName\Desktop\PROJECT\crowd_detection
 
 3️⃣ Activate your Conda environment (make sure 'crowddetect' already exists):
 
